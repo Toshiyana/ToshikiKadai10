@@ -13,6 +13,9 @@
 		999BFB5E275E156C00D2E143 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999BFB5C275E156C00D2E143 /* Main.storyboard */; };
 		999BFB60275E157000D2E143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999BFB5F275E157000D2E143 /* Assets.xcassets */; };
 		999BFB63275E157000D2E143 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999BFB61275E157000D2E143 /* LaunchScreen.storyboard */; };
+		999BFB6D275E181600D2E143 /* PrefectureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999BFB6B275E181600D2E143 /* PrefectureCell.swift */; };
+		999BFB6E275E181600D2E143 /* PrefectureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 999BFB6C275E181600D2E143 /* PrefectureCell.xib */; };
+		999BFB73275E1D3700D2E143 /* PrefectureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999BFB72275E1D3700D2E143 /* PrefectureData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		999BFB5F275E157000D2E143 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		999BFB62275E157000D2E143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		999BFB64275E157000D2E143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		999BFB6B275E181600D2E143 /* PrefectureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureCell.swift; sourceTree = "<group>"; };
+		999BFB6C275E181600D2E143 /* PrefectureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrefectureCell.xib; sourceTree = "<group>"; };
+		999BFB72275E1D3700D2E143 /* PrefectureData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,48 @@
 			children = (
 				999BFB56275E156C00D2E143 /* AppDelegate.swift */,
 				999BFB58275E156C00D2E143 /* SceneDelegate.swift */,
-				999BFB5A275E156C00D2E143 /* ViewController.swift */,
-				999BFB5C275E156C00D2E143 /* Main.storyboard */,
-				999BFB5F275E157000D2E143 /* Assets.xcassets */,
-				999BFB61275E157000D2E143 /* LaunchScreen.storyboard */,
+				999BFB6F275E1C0B00D2E143 /* Models */,
+				999BFB70275E1C2000D2E143 /* Views */,
+				999BFB71275E1C2800D2E143 /* Controllers */,
+				999BFB74275E2CDE00D2E143 /* SupportingFiles */,
 				999BFB64275E157000D2E143 /* Info.plist */,
 			);
 			path = 10;
+			sourceTree = "<group>";
+		};
+		999BFB6F275E1C0B00D2E143 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				999BFB72275E1D3700D2E143 /* PrefectureData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		999BFB70275E1C2000D2E143 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				999BFB5C275E156C00D2E143 /* Main.storyboard */,
+				999BFB6B275E181600D2E143 /* PrefectureCell.swift */,
+				999BFB6C275E181600D2E143 /* PrefectureCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		999BFB71275E1C2800D2E143 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				999BFB5A275E156C00D2E143 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		999BFB74275E2CDE00D2E143 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				999BFB61275E157000D2E143 /* LaunchScreen.storyboard */,
+				999BFB5F275E157000D2E143 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +118,7 @@
 				999BFB4F275E156C00D2E143 /* Sources */,
 				999BFB50275E156C00D2E143 /* Frameworks */,
 				999BFB51275E156C00D2E143 /* Resources */,
+				999BFB6A275E15CD00D2E143 /* Run Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -125,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				999BFB6E275E181600D2E143 /* PrefectureCell.xib in Resources */,
 				999BFB63275E157000D2E143 /* LaunchScreen.storyboard in Resources */,
 				999BFB60275E157000D2E143 /* Assets.xcassets in Resources */,
 				999BFB5E275E156C00D2E143 /* Main.storyboard in Resources */,
@@ -133,12 +176,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		999BFB6A275E15CD00D2E143 /* Run Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Swiftlint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint autocorrect --format # 自動修正の有効化\n  swiftlint\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		999BFB4F275E156C00D2E143 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				999BFB6D275E181600D2E143 /* PrefectureCell.swift in Sources */,
 				999BFB5B275E156C00D2E143 /* ViewController.swift in Sources */,
+				999BFB73275E1D3700D2E143 /* PrefectureData.swift in Sources */,
 				999BFB57275E156C00D2E143 /* AppDelegate.swift in Sources */,
 				999BFB59275E156C00D2E143 /* SceneDelegate.swift in Sources */,
 			);
