@@ -11,7 +11,7 @@ class PrefectureCell: UITableViewCell {
     static let identifier = "PrefectureCell"
 
     static func nib() -> UINib {
-        return UINib(nibName: "PrefectureCell", bundle: nil)
+        UINib(nibName: "PrefectureCell", bundle: nil)
     }
 
     @IBOutlet private weak var nameLabel: UILabel!
